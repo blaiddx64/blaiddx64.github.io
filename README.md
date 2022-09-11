@@ -1,6 +1,6 @@
-# TryAnotherWay
+# Blaidd's Blog
 
-[tryanotherway.xyz](https://tryanotherway.xyz/)
+[blaidd.xyz](https://blaidd.xyz/)
 
 # Running
 

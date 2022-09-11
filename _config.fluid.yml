@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 navbar:
-  blog_title: Try Another Way Blog
+  blog_title: Blaidd's Blog
   menu:
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     #- { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: 'About Author' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: 'About' }
 
 dark_mode:
   enable: true
@@ -18,7 +18,7 @@ dark_mode:
 index:
   slogan:
     enable: true
-    text: Hacking and Offensive Security Random Stuff
+    text: Hacking and Cyber Security Related stuff
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -40,10 +40,10 @@ disqus:
 
 about:
   enabled: true
-  subtitle: 'About Author'
-  avatar: /img/avatar.jpg
+  subtitle: 'About'
+  avatar: /img/avatar.jpeg
   name: "blaidd"
-  intro: "I'm a penetration tester and I'll write about offensive security here sometimes..."
+  intro: "I work with pentest and I'll write about hacking here sometimes..."
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -54,9 +54,9 @@ about:
 
 
 # Site
-title: Try Another Way Blog
+title: Blaidd's Blog
 subtitle: ''
-description: 'Hacking and Offensive Security Random Stuff'
+description: 'Hacking and Cyber Security Related stuff'
 keywords:
 author: blaidd
 language: en
@@ -64,7 +64,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://tryanotherway.xyz/
+url: https://blaidd.xyz/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
