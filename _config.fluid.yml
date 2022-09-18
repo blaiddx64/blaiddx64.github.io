@@ -41,7 +41,7 @@ disqus:
 about:
   enabled: true
   subtitle: 'About'
-  avatar: /img/avatar.jpeg
+  avatar: /img/avatar.jpg
   name: "blaidd"
   intro: "I work with pentest and I'll write about hacking here sometimes..."
   banner_img: /img/banner.jpg
