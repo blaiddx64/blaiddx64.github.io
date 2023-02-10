@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 navbar:
-  blog_title: Blaidd's Blog
+  blog_title: hacking, hacking and hacking
   menu:
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     #- { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
@@ -24,9 +24,9 @@ index:
   banner_mask_alpha: 0.5
 
 # Icon for browser tab
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
-apple_touch_icon: /img/favicon.png
+apple_touch_icon: /img/favicon.ico
 
 fun_features:
   typing:
