@@ -43,7 +43,7 @@ about:
   subtitle: 'About'
   avatar: /img/avatar.jpg
   name: "blaidd 🏴‍☠️"
-  intro: "penetration tester and knife flipper; // eJPT | eWPTX"
+  intro: "penetration tester and security researcher..."
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -51,7 +51,7 @@ about:
     - { class: 'iconfont icon-telegram-fill', link: 'https://t.me/blaiddx64', tip: 'Telegram' }
     - { class: 'iconfont icon-twitter-fill', link: 'https://twitter.com/blaiddx64', tip: 'Twitter' }
     - { class: 'iconfont icon-code', link: 'https://hackerone.com/blaidd', tip: 'Hackerone' }
-
+    - { class: 'iconfont icon-github-fill', link: 'https://huntr.dev/users/blaiddx64/', tip: 'Huntr' }
 
 # Site
 title: hacking, hacking and hacking
