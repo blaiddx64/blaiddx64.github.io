@@ -7,8 +7,9 @@ layout: about
 <div style="text-align: center;">
 eJPT - eLearnSecurity Junior Penetration Tester<br>
 eWPTX - eLearnSecurity Web application Penetration Tester eXtreme
+</div>
 
-<h3>Security Advisories</h3>
+<h3 style="text-align: center;">Security Advisories</h3>
+<div style="text-align: center;">
 <a href="https://github.com/mozilla/nunjucks/security/advisories/GHSA-x77j-w7wf-fjmw" target="_blank">CVE-2023-2142 - mozilla/nunjucks autoescape bypass leads to cross site scripting</a>
-
 </div>
