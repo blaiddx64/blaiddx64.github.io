@@ -42,7 +42,7 @@ about:
   enabled: true
   subtitle: 'About'
   avatar: /img/avatar.jpg
-  name: "blaidd 🏴‍☠️"
+  name: "blaidd"
   intro: "penetration tester and security researcher..."
   banner_img: /img/banner.jpg
   banner_img_height: 50
