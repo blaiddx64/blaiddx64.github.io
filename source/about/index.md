@@ -5,8 +5,8 @@ layout: about
 ---
 <h3 style="text-align: center;">Certifications</h3>
 <div style="text-align: center;">
-eJPT - eLearnSecurity Junior Penetration Tester<br>
-eWPTX - eLearnSecurity Web application Penetration Tester eXtreme
+eWPTX - eLearnSecurity Web application Penetration Tester eXtreme<br>
+eJPT - eLearnSecurity Junior Penetration Tester
 </div>
 
 <h3 style="text-align: center;">Security Advisories</h3>
