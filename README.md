@@ -1,6 +1,6 @@
 # Blaidd's Blog
 
-[blaidd.xyz](https://blaidd.xyz/)
+[blaiddx64.github.io](https://blaiddx64.github.io)
 
 # Running
 
