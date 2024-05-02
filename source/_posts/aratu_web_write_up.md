@@ -284,4 +284,4 @@ Parabéns pro pessoal da Boitatech pelo CTF e pelo evento da Semana Aratu, foi m
 Esse foi o ranking final:
 <img src="/img/aratuctf/Pasted image 20220912002652.png" />
 
-<p class="note note-info">Author: <a href="https://twitter.com/blaiddx64" target="_blank">Blaidd</a></p>
+<p class="note note-info">Author: <a href="https://twitter.com/blaiddx64" target="_blank">blaidd</a></p>

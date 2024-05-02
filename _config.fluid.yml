@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 navbar:
-  blog_title: hacking, hacking and hacking
+  blog_title: blaidd's blog
   menu:
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     #- { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
-    - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
+    #- { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: 'About' }
 
@@ -18,7 +18,7 @@ dark_mode:
 index:
   slogan:
     enable: true
-    text: hacking and computer science articles...
+    text: hacking, programming and game development stuff
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -43,7 +43,7 @@ about:
   subtitle: 'About'
   avatar: /img/avatar.jpg
   name: "blaidd"
-  intro: "I'am Hugo (or blaidd if you prefer) and I work with cyber security (pentest) since 2021. I also have 3 years of experience working as a developer..."
+  intro: "I'am Hugo (or blaidd) and I work as ethical hacker since 2021. I have a background of 3 years of experience working with web development before start with hacking. On my free time I do some game devolpment stuff to distract my mind."
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -51,11 +51,12 @@ about:
     - { class: 'iconfont icon-telegram-fill', link: 'https://t.me/blaiddx64', tip: 'Telegram' }
     - { class: 'iconfont icon-twitter-fill', link: 'https://twitter.com/blaiddx64', tip: 'Twitter' }
     - { class: 'iconfont icon-code', link: 'https://hackerone.com/blaidd', tip: 'Hackerone' }
+    - { class: 'iconfont icon-code', link: 'https://blaiddx64.itch.io', tip: 'Itch.io' }
 
 # Site
-title: hacking, hacking and hacking
+title: blaidd's blog
 subtitle: ''
-description: 'hacking and computer science articles...'
+description: 'hacking, programming and game development stuff'
 keywords:
 author: blaidd
 language: en
