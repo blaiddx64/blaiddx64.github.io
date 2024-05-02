@@ -43,7 +43,7 @@ about:
   subtitle: 'About'
   avatar: /img/avatar.jpg
   name: "blaidd"
-  intro: "I'am Hugo (or blaidd) and I work as ethical hacker since 2021. I have a background of 3 years of experience working with web development before start with hacking. On my free time I do some game devolpment stuff to distract my mind."
+  intro: "I'm Hugo (or blaidd) and I work as ethical hacker since 2021.<br>I have a background of 3 years of experience working with web development before start with hacking.<br>On my free time, I do some game devolpment stuff to distract my mind."
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
