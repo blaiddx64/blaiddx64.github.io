@@ -51,6 +51,3 @@ And now you have the root flag.
 ![root-flag](/img/cowboyhacker/root-flag.png)
 
 This was my first ctf write up, sorry anything I did wrong, thanks for read and see you space cowboy…
-
-
-<p class="note note-info">Author: <a href="https://twitter.com/blaiddx64" target="_blank">blaidd</a></p>
