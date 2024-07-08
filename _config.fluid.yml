@@ -43,7 +43,7 @@ about:
   subtitle: 'About'
   avatar: /img/avatar.jpg
   name: "blaidd"
-  intro: "I'm Hugo (or blaidd) and I work as ethical hacker since 2021.<br>I have a background of 3 years of experience working with web development before start with hacking.<br>On my free time, I do some game devolpment stuff to distract my mind.<br><br>Current job: Red Team Security Engineer at some big company.<br>Current game: R:EVILBORN"
+  intro: "I'm blaidd and I work as ethical hacker since 2021.<br>I have a background of 3 years of experience working with web development before start with hacking.<br>On my free time, I do some game devolpment stuff to distract my mind."
   banner_img: /img/banner.jpg
   banner_img_height: 50
   banner_mask_alpha: 0.5
@@ -51,7 +51,6 @@ about:
     - { class: 'iconfont icon-telegram-fill', link: 'https://t.me/blaiddx64', tip: 'Telegram' }
     - { class: 'iconfont icon-twitter-fill', link: 'https://twitter.com/blaiddx64', tip: 'Twitter' }
     - { class: 'iconfont icon-code', link: 'https://hackerone.com/blaidd', tip: 'Hackerone' }
-    - { class: 'iconfont icon-code', link: 'https://blaiddx64.itch.io', tip: 'Itch.io' }
 
 # Site
 title: blaidd's blog
